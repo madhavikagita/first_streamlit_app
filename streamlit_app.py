@@ -42,4 +42,6 @@ streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_rows)
 #Allow user to add a fruit to the list
 add_my_fruit=  streamlit.text_input('What food would you like to add?','jackfruit')
-streamlit.text('Thanks for adding'+ add_my_fruit)
+streamlit.text('Thanks for adding '+ add_my_fruit)
+
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")   
